@@ -2,7 +2,7 @@
 
 A high-performance REST API for converting between various document formats, built with Node.js and optimized for deployment on Railway and RapidAPI.
 
-## 🚀 Features
+## Features
 
 ### Core Conversions
 - **Office to PDF**: Convert DOCX, XLSX, PPTX to PDF with high fidelity
@@ -17,7 +17,7 @@ A high-performance REST API for converting between various document formats, bui
 - Comprehensive error handling
 - RapidAPI integration ready
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Runtime**: Node.js 18+
 - **Framework**: Express.js
@@ -28,7 +28,7 @@ A high-performance REST API for converting between various document formats, bui
 - **Queue**: Bull (Redis)
 - **Deployment**: Railway & RapidAPI
 
-## 📦 Installation
+## Installation
 
 ### Local Development
 
@@ -61,7 +61,7 @@ docker build -t document-api .
 docker run -p 3000:3000 --env-file .env document-api
 ```
 
-## 📋 API Endpoints
+## API Endpoints
 
 ### Document Conversion
 
@@ -179,7 +179,7 @@ GET /api/jobs/{jobId}/status
 GET /api/jobs/{jobId}/download
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Railway Deployment
 
@@ -239,7 +239,7 @@ railway up
    Business ($99): 100,000 requests/month
    ```
 
-## 🔧 Environment Variables
+##  Environment Variables
 
 ```env
 # Server
@@ -266,7 +266,7 @@ JOB_TIMEOUT=60000  # 1 minute
 JOB_ATTEMPTS=3
 ```
 
-## 💡 Usage Examples
+##  Usage Examples
 
 ### cURL Example - Office to PDF
 ```bash
@@ -317,14 +317,14 @@ response = requests.post(
 print(response.json())
 ```
 
-## 📊 Performance
+## Performance
 
 - Office to PDF: ~2-3 seconds for typical documents
 - Excel conversions: ~1-2 seconds for files under 10MB
 - HTML/Markdown: < 1 second
 - OCR: ~3-5 seconds depending on image complexity
 
-## 🔒 Security
+## Security
 
 - File type validation
 - Size limits enforced
@@ -332,12 +332,12 @@ print(response.json())
 - Rate limiting per IP
 - RapidAPI authentication
 
-## 🤝 Support
+## Support
 
 For issues, questions, or feature requests:
 - Email: support@your-domain.com
 - RapidAPI Discussion Board
 
-## 📄 License
+## License
 
 MIT License - see LICENSE file for details
